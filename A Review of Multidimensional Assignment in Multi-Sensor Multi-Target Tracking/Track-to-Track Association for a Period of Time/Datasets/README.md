@@ -41,7 +41,7 @@ Dataset specifications are given in following table.
 
 All of the datasets are of the structure shown in the figure below for an example of a $2$-sensor $N$-target $250$ m separation distance.
 
-![Simulation environment with $2$-sensor $N$-target $250$ m separation distance](Figures/simulation_environment.jpg)
+![Simulation environment with $2$-sensor $N$-target $250$ m separation distance](https://github.com/abukhalaf/MDA_ICNS2024/blob/main/A%20Review%20of%20Multidimensional%20Assignment%20in%20Multi-Sensor%20Multi-Target%20Tracking/Figures/scenario_environment.jpg)
 
 The sensors in datasets are designed to be synchronous RADARs with identical properties as below:
 
