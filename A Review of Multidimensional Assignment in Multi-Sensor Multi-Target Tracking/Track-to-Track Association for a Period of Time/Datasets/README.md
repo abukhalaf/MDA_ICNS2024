@@ -1,13 +1,4 @@
-All of the datasets are of the structure shown in the figure below for an example of a $2$-sensor $N$-target $250$ m separation distance.
-
-![alt text](http://url/to/img.png)
-
-The sensors in datasets are designed to be synchronous RADARs with identical properties, and all targets are identical objects following a line-trajectory with a constant speed of $0.25$ Mach and a radar cross section (RCS) of $1$ $\text{m}^2$.
-
-The [*trackingScenario*](https://www.mathworks.com/help/fusion/ref/trackingscenario.html) is used to set up the simulation environment, the [*fusionRadarSensor*](https://www.mathworks.com/help/fusion/ref/fusionradarsensor-system-object.html) is used to simulate RADAR sensors, and the [*platform*](https://www.mathworks.com/help/fusion/ref/platform.html) is used for the sensor holder or target aircraft platforms.
-
 Dataset specifications are given in following table.
-
 
 | Dataset Name  | Sensor Number | Target Number | Distance between Targets |
 | :------------ | :-----------: | :-----------: | :----------------------: |
@@ -47,3 +38,48 @@ Dataset specifications are given in following table.
 | dataset34.mat | 4             | 10            | 100                      |
 | dataset35.mat | 4             | 10            | 50                       |
 | dataset36.mat | 4             | 10            | 20                       |
+
+All of the datasets are of the structure shown in the figure below for an example of a $2$-sensor $N$-target $250$ m separation distance.
+
+![Simulation environment with $2$-sensor $N$-target $250$ m separation distance](Figures/simulation_environment.jpg)
+
+The sensors in datasets are designed to be synchronous RADARs with identical properties as below:
+
+| Property              | Value                |
+| :-------------------- | :------------------: |
+| UpdateRate            | 10                   |
+| MountingLocation      | [0, 0, 0]            |
+| MountingAngles        | [0, 0, 0]            |
+| DetectionMode         | Monostatic           |
+| ScanMode              | No scanning          |
+| HasElevation          | true                 |
+| HasRangeRate          | false                |
+| HasNoise              | true                 |
+| HasFalseAlarms        | false                |
+| HasOcclusion          | true                 |
+| HasRangeAmbiguities   | false                |
+| HasINS                | true                 |
+| MaxNumReportsSource   | Auto                 |
+| TargetReportFormat    | Clustered detections |
+| DetectionCoordinates  | Sensor spherical     |
+| AzimuthResolution     | 0.001                |
+| ElevationResolution   | 0.001                |
+| RangeResolution       | 10                   |
+| AzimuthBiasFraction   | 0.1                  |
+| ElevationBiasFraction | 0.1                  |
+| RangeBiasFraction     | 0.05                 |
+| CenterFrequency       | 300e6                |
+| Bandwidth             | 3e6                  |
+| Sensitivity           | -50                  |
+| DetectionProbability  | 0.9                  |
+| ReferenceRange        | 20e3                 |
+| ReferenceRCS          | 0                    |
+| FalseAlarmRate        | 1e-6                 |
+| FieldOfView           | [30, 5]              |
+| RangeLimits           | [0, 20e3]            |
+| InterferenceInputPort | false                |
+| EmissionsInputPort    | false                |
+
+All targets are identical objects following a line-trajectory with a constant speed of $0.25$ Mach and a radar cross section (RCS) of $1$ $\text{m}^2$.
+
+The [*trackingScenario*](https://www.mathworks.com/help/fusion/ref/trackingscenario.html) is used to set up the simulation environment, the [*fusionRadarSensor*](https://www.mathworks.com/help/fusion/ref/fusionradarsensor-system-object.html) is used to simulate RADAR sensors, and the [*platform*](https://www.mathworks.com/help/fusion/ref/platform.html) is used for the sensor holder or target aircraft platforms.
