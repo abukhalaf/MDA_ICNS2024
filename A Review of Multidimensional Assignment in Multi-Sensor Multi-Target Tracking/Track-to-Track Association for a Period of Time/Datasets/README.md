@@ -39,7 +39,7 @@ Dataset specifications are given in following table.
 | dataset35.mat | 4             | 10            | 50                       |
 | dataset36.mat | 4             | 10            | 20                       |
 
-All of the datasets are of the structure shown in the figure below for an example of a $2$-sensor $N$-target $250$ m separation distance.
+All of the datasets are of the structure shown in the figure below for an example of a $2$-sensor $N$-target $250$ m separation distance. All targets are identical objects following a line-trajectory with a constant speed of $0.25$ Mach and a radar cross section (RCS) of $1$ $\text{m}^2$. The [*trackingScenario*](https://www.mathworks.com/help/fusion/ref/trackingscenario.html) is used to set up the simulation environment, the [*fusionRadarSensor*](https://www.mathworks.com/help/fusion/ref/fusionradarsensor-system-object.html) is used to simulate RADAR sensors, and the [*platform*](https://www.mathworks.com/help/fusion/ref/platform.html) is used for the sensor holder or target aircraft platforms.
 
 ![Simulation environment with $2$-sensor $N$-target $250$ m separation distance](https://github.com/abukhalaf/MDA_ICNS2024/blob/main/A%20Review%20of%20Multidimensional%20Assignment%20in%20Multi-Sensor%20Multi-Target%20Tracking/Figures/scenario_environment.jpg)
 
@@ -80,6 +80,3 @@ The sensors in datasets are designed to be synchronous RADARs with identical pro
 | InterferenceInputPort | false                |
 | EmissionsInputPort    | false                |
 
-All targets are identical objects following a line-trajectory with a constant speed of $0.25$ Mach and a radar cross section (RCS) of $1$ $\text{m}^2$.
-
-The [*trackingScenario*](https://www.mathworks.com/help/fusion/ref/trackingscenario.html) is used to set up the simulation environment, the [*fusionRadarSensor*](https://www.mathworks.com/help/fusion/ref/fusionradarsensor-system-object.html) is used to simulate RADAR sensors, and the [*platform*](https://www.mathworks.com/help/fusion/ref/platform.html) is used for the sensor holder or target aircraft platforms.
